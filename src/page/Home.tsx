@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { cards } from "../data/cardData";
-import { FaRocket } from "react-icons/fa";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -26,12 +25,9 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">
-        카드 선택
-        <FaRocket size={25} />
-      </h1>
+      <img src="/MemomoLogo.png" alt="Memomo" className="home-logo" />
       <span className="home-description">
-        카드를 선택하고 시작하기 버튼을 눌러 게임을 시작해주세요.
+        * 카드를 선택하고 시작하기 버튼을 눌러 게임을 시작해주세요 *
       </span>
       <div className="home-grid">
         {selectedCards.map((selected, index) => (
