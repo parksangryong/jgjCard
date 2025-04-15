@@ -1,5 +1,5 @@
 {
-  "name": "jgjcard",
+  "name": "memomo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/noto-sans": "^5.2.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-ga4": "^2.1.0",

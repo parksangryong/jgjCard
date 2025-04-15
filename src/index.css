@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .layout-container {
@@ -293,4 +294,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.countdown-selector {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.countdown-selector label {
+  margin-right: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.countdown-select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid var(--primary);
+  background-color: white;
+  color: var(--primary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.countdown-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
 }

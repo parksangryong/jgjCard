@@ -19,7 +19,9 @@ const CardFlip = () => {
   );
   const [gameCards, setGameCards] = useState<Card[]>([]);
   const [flippedCards, setFlippedCards] = useState<number[]>([]);
-  const [countdown, setCountdown] = useState(3);
+  const [countdown, setCountdown] = useState(
+    location.state?.countdownTime || 3
+  );
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [isChecking, setIsChecking] = useState(false);
 
