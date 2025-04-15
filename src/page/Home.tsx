@@ -21,6 +21,16 @@ const Home = () => {
       .map((selected, index) => (selected ? index : -1))
       .filter((index) => index !== -1);
 
+    if (selectedCardIndices.length === 0) {
+      alert("카드를 선택해주세요.");
+      return;
+    }
+
+    if (selectedCardIndices.length < 3) {
+      alert("최소 3개의 카드를 선택해주세요.");
+      return;
+    }
+
     navigate("/card-flip", {
       state: { selectedCards: selectedCardIndices, countdownTime },
     });
