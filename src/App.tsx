@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import ReactGA4 from "react-ga4";
+import { useEffect } from "react";
 // pages
 import Home from "./page/Home";
 import CardFlip from "./page/CardFlip";
@@ -8,6 +9,16 @@ import CardFlip from "./page/CardFlip";
 import BaseLayout from "./layout/BaseLayout";
 
 function App() {
+  useEffect(() => {
+    ReactGA4.initialize([
+      {
+        trackingId: "G-85STCFYNCW", //받은 키
+        gaOptions: {
+          siteSpeedSampleRate: 100,
+        },
+      },
+    ]);
+  }, []);
   const router = createBrowserRouter([
     {
       path: "/",
